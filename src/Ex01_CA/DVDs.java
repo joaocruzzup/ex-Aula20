@@ -14,12 +14,6 @@ public class DVDs extends Produtos{
         return duracao;
     }
 
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(duracao);
-    }
-
     @Override
     public String mostrarDetalhesDoItem() {
         return "[ Código de barras: " + getCodigoDeBarras() +

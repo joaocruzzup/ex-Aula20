@@ -21,12 +21,9 @@ public class DVDs extends Produtos{
     }
 
     @Override
-    public void mostrarDetalhesDoItem() {
-        System.out.printf(
-                "Código de barras: %s %n" +
-                "Nome: %s %n" +
-                "Preço: R$ %.2f %n" +
-                "Duração: %.2f minutos %n",
-                getCodigoDeBarras(), getNome(), getPreco(), getDuracao());
+    public String mostrarDetalhesDoItem() {
+        return "[ Código de barras: " + getCodigoDeBarras() +
+                " | Nome: " + getNome() + " | Preço: " + getPreco() +
+                " | Duração: " + getDuracao() + "min ]";
     }
 }

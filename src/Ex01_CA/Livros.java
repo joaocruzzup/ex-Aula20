@@ -1,7 +1,5 @@
 package Ex01_CA;
 
-import java.util.Objects;
-
 public class Livros extends Produtos{
     private String autor;
 
@@ -14,12 +12,9 @@ public class Livros extends Produtos{
         return autor;
     }
 
-    public void mostrarDetalhesDoItem() {
-        System.out.printf(
-                "Código de barras: %s %n" +
-                "Nome: %s %n" +
-                "Preço: R$ %.2f %n" +
-                "Autor: %s %n",
-                getCodigoDeBarras(), getNome(), getPreco(),getAutor());
+    public String mostrarDetalhesDoItem() {
+        return "[ Código de barras: " + getCodigoDeBarras() +
+                " | Nome: " + getNome() + " | Preço: " + getPreco() +
+                " | Autor: " + getAutor() + " ]";
     }
 }

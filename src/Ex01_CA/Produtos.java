@@ -25,7 +25,7 @@ public abstract class Produtos {
         return preco;
     }
 
-    public abstract void mostrarDetalhesDoItem();
+    public abstract String mostrarDetalhesDoItem();
 
     @Override
     public boolean equals(Object o) {
@@ -34,5 +34,4 @@ public abstract class Produtos {
         Produtos produtos = (Produtos) o;
         return Objects.equals(getCodigoDeBarras(), produtos.getCodigoDeBarras());
     }
-
 }

@@ -13,12 +13,9 @@ public class CDs extends Produtos{
     }
 
     @Override
-    public void mostrarDetalhesDoItem() {
-        System.out.printf(
-                "Código de barras: %s %n" +
-                "Nome: %s %n" +
-                "Preço: R$ %.2f %n" +
-                "Número de Faixas: %d %n",
-                getCodigoDeBarras(), getNome(), getPreco(), getNumeroDeFaixas());
+    public String mostrarDetalhesDoItem() {
+        return "[ Código de barras: " + getCodigoDeBarras() +
+                " | Nome: " + getNome() + " | Preço: " + getPreco() +
+                " | Número de faixas: " + getNumeroDeFaixas() + " ]";
     }
 }

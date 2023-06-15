@@ -17,6 +17,10 @@ public abstract class Produtos {
         return codigoDeBarras;
     }
 
+    public void setCodigoDeBarras(String codigoDeBarras) {
+        this.codigoDeBarras = codigoDeBarras;
+    }
+
     public String getNome() {
         return nome;
     }

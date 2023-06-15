@@ -19,6 +19,8 @@ public class Loja {
         listaProdutos.add(Cd1);
         listaProdutos.add(Cd2);
 
-        Cd1.mostrarDetalhesDoItem();
+        for (Produtos produto: listaProdutos) {
+            produto.mostrarDetalhesDoItem();
+        }
     }
 }

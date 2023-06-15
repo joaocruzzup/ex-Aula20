@@ -15,7 +15,7 @@ public class Livros extends Produtos{
     public void mostrarDetalhesDoItem() {
         System.out.printf(
                 "Nome: %s %n" +
-                "Preço: R$%.2f %n" +
+                "Preço: R$ %.2f %n" +
                 "Autor: %s %n",
                 getNome(), getPreco(),getAutor());
     }

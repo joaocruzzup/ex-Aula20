@@ -16,7 +16,7 @@ public class DVDs extends Produtos{
     public void mostrarDetalhesDoItem() {
         System.out.printf(
                 "Nome: %s %n" +
-                "Preço: R$%.2f %n" +
+                "Preço: R$ %.2f %n" +
                 "Duração: %.2f %n minutos",
                 getNome(), getPreco(), getDuracao());
     }

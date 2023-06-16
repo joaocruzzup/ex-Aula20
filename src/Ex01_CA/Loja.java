@@ -8,32 +8,46 @@ public class Loja {
     public static void main(String[] args) {
         List<Produtos> listaProdutos = new ArrayList<>();
 
-        // Instanciando os objetos
-        Produtos livro1 = new Livros("1", "Harry Potter", 54.3F, "J.K");
-        Produtos livro2 = new Livros("2", "Senhor dos anéis - Anéis do poder", 44.5F, "R. R. Tolkien");
-        Produtos Dvd1 = new DVDs("3", "Xuxa só para baixinhos", 20.5F, 54.3F);
-        Produtos Cd1 = new CDs("4", "Anavitoria - O tempo é agora", 28.5F, 20);
-        Produtos Cd2 = new CDs("5", "Rubel - Pearl", 30.5F, 30);
+        // Instanciando Objetos e Adicionando os objetos na lista
+        listaProdutos.add(new Livros("1", "Harry Potter", 54.3F, "J.K"));
+        listaProdutos.add(new Livros("2", "Senhor dos anéis - Anéis do poder", 44.5F, "R. R. Tolkien"));
+        listaProdutos.add(new DVDs("3", "Xuxa só para baixinhos", 20.5F, 54.3F));
+        listaProdutos.add(new CDs("4", "Anavitoria - O tempo é agora", 28.5F, 20));
+        listaProdutos.add(new CDs("5", "Rubel - Pearl", 30.5F, 30));
 
-        // Adicionando os objetos na lista
-        listaProdutos.add(livro1);
-        listaProdutos.add(livro2);
-        listaProdutos.add(Dvd1);
-        listaProdutos.add(Cd1);
-        listaProdutos.add(Cd2);
+        System.out.println("-------------------------------------------");
+        System.out.println("Boas vindas ao seu gerenciador de estoques!");
+        System.out.println("-------------------------------------------");
 
-        // Busca dos produtos
-        System.out.println(buscarPorCodigo(listaProdutos));
+        System.out.println("Escolha a opção que você deseja!");
+        System.out.println("1. Ver estoque \n2. Buscar produto \n3. Duplicar Produtos");
+        System.out.println("Digite a opção: ");
+        Scanner sc = new Scanner(System.in);
+        int opcao = sc.nextInt();
 
-        // Impressão da lista
-        imprimirProdutos(listaProdutos);
-
-        // Escolha um produto
-        escolherProdutoEDuplicar(3, listaProdutos);
-
-        // Impressão da lista
-        imprimirProdutos(listaProdutos);
-
+        switch (opcao){
+            case 1:
+                System.out.println("--------------------------- Menu Estoque ---------------------------");
+                imprimirProdutos(listaProdutos);
+                break;
+            case 2:
+                System.out.println("---------- Menu Buscar por Código de Barras ----------");
+                System.out.println(buscarPorCodigo(listaProdutos));
+                break;
+            case 3:
+                System.out.println("---------- Menu Duplicar Produtos ----------");
+                System.out.println("Digite o indíce do produto que deseja duplicar: ");
+                int indice = sc.nextInt();
+                escolherProdutoEDuplicar(indice, listaProdutos);
+                System.out.println("Produto duplicado!");
+                System.out.println("Digite enter para ver a nova lista");
+                sc.nextLine(); sc.nextLine();
+                imprimirProdutos(listaProdutos);
+                break;
+            default:
+                System.out.println("Opção inválida!");
+                break;
+        }
     }
 
     public static String buscarPorCodigo(List<Produtos> lista) {

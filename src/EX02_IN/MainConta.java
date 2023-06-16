@@ -10,7 +10,5 @@ public class MainConta {
 
         SeguroDeVida sv1 = new SeguroDeVida();
         System.out.println(sv1.calcularTributos());
-
-
     }
 }

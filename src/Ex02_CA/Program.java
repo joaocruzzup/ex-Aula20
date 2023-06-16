@@ -10,7 +10,6 @@ public class Program {
         // Printando as formas com áreas e perímetros
         int i = 1;
         for (Forma forma: arrayFormas) {
-            System.out.println("-------------------------------------------------------");
             System.out.print("Forma " + i + ": ");
             System.out.println(forma.mostrarInformacao());
             System.out.println("Área: " + forma.calcularArea());

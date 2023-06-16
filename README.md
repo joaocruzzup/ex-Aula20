@@ -13,14 +13,14 @@ Esse repositório é referente a lista de exercício de POO.
 
 ---
 
-# Classes com os métodos Main dos exercícios
+# 💾 Classes com os métodos Main dos exercícios
 
 Para poder executar os programas, é necessário executar a classe que possua o métodos main, abaixo há qual classe possui o método main de cada exercicio.
 
-1. [Main Ex01](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/Ex01_CA/Loja.java)
-2. [Main Ex02](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/Ex02_CA/Program.java) 
-3. [Main Ex03](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/Ex01_IN/Exercicio01.java) 
-4. [Main Ex04](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/EX02_IN/MainConta.java) 
+1. [Main Ex01](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/Ex01_CA/Loja.java) = Loja.java
+2. [Main Ex02](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/Ex02_CA/Program.java) = Program.java
+3. [Main Ex03](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/Ex01_IN/Exercicio01.java) = Exercicio01.java
+4. [Main Ex04](https://github.com/joaocruzzup/ex-Aula20/blob/main/src/EX02_IN/MainConta.java) = Mainconta.java
 
 # ⏯️ Como executar os Programas
 
